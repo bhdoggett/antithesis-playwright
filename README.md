@@ -6,6 +6,7 @@ Getting started
 
 - Node.js >= 18
 - Playwright `@playwright/test` version 11.4.2
+- The Job I'm applying for must still be on the website for the tests to work!
 
 ## Setup
 

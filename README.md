@@ -1,6 +1,4 @@
-This Project is designed to help me get a job. It demonstrates my familiarity with the end-to-end testing library, Playwright.
-
-Getting started
+This Project is designed to help me get a job at Antithesis. It demonstrates my familiarity with the end-to-end testing library, Playwright, by testing their [Careers](https://antithesis.com/company/careers/) page and the [UI Engineer | Frontend Developer](https://antithesis.com/company/careers/?ashby_jid=0f965d12-fa14-487d-a71a-d470247d61fc) Role.
 
 ## Requirements
 
@@ -10,7 +8,7 @@ Getting started
 
 ## Setup
 
-1. Install dependenceis:
+1. Install dependencies:
 
 ```bash
 npm install

@@ -11,7 +11,7 @@ test.describe("UI Engineer Role | Frontend Developer", () => {
     await page.goto("https://antithesis.com/company/careers/");
   });
 
-  test("Should navigate to job desription and application form.", async ({
+  test("Should navigate to job description and application form.", async ({
     page,
   }) => {
     const frame = await page

@@ -1,4 +1,4 @@
-import { test as base, expect, FrameLocator } from "@playwright/test";
+import { test as base, expect } from "@playwright/test";
 import { ApplicationPage } from "./fixtures/ApplicationPage";
 
 const test = base.extend<{ applicationPage: ApplicationPage }>({

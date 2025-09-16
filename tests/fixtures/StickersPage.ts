@@ -8,6 +8,13 @@ export class StickersPage {
   readonly zipInput: Locator;
   readonly countryInput: Locator;
   readonly nextButton: Locator;
+  readonly firstNameInput: Locator;
+  readonly lastNameInput: Locator;
+  readonly emailInput: Locator;
+  readonly companyInput: Locator;
+
+  // await page.getByRole('textbox', { name: 'name@company.com' }).click();
+  // await page.locator('#youform input[name="company"]').click();
 
   constructor(private readonly page: Page) {
     this.addressOneInput = page.getByRole("textbox", { name: "Main St" });
@@ -17,8 +24,12 @@ export class StickersPage {
     this.cityInput = page.getByRole("textbox", { name: "San Francisco" });
     this.stateInput = page.getByRole("textbox", { name: "California" });
     this.zipInput = page.getByRole("textbox", { name: "Zip" });
-    this.countryInput = page.getByRole("textbox", { name: "Zip" });
+    this.countryInput = page.getByRole("textbox", { name: "United States" });
     this.nextButton = page.getByRole("button", { name: "Next" });
+    this.firstNameInput = page.locator('input[name="first_name"]');
+    this.lastNameInput = page.locator('#youform input[name="last_name"]');
+    this.emailInput = page.getByRole("textbox", { name: "name@company.com" });
+    this.companyInput = page.locator('#youform input[name="company"]');
   }
 
   async goto() {
@@ -50,5 +61,10 @@ export class StickersPage {
   async fillCountry(text: string) {
     await this.countryInput.click();
     await this.countryInput.fill(text);
+  }
+
+  async fillName(text: string) {
+    await this.firstNameInput.click();
+    await this.firstNameInput.fill(text);
   }
 }
